@@ -1,7 +1,7 @@
 {
-  "name": "grunt-buddha",
+  "name": "grunt-buddha-charlie",
   "version": "0.0.1",
-  "description": "This is a plugin named grunt-buddha",
+  "description": "This is a plugin named grunt-buddha-charlie",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/charlie77/grunt-buddha-charlie.git"
