@@ -37,15 +37,17 @@ grunt.initConfig({
 
 ### Options
 
-#### options.separator
+#### options.who
 Type: `String`
-Default value: `',  '`
+Default value: `'alpaca '`
+指定生成的字符画类型
 
 A string value that is used to do something with whatever.
 
-#### options.punctuation
+#### options.commentsSymbol
 Type: `String`
-Default value: `'.'`
+Default value: `'//'`
+指定拼接字符画是使用的注释符
 
 A string value that is used to do something else with whatever else.
 
@@ -57,36 +59,21 @@ In this example, the default options are used to do something with whatever. So 
 ```js
 grunt.initConfig({
   buddha: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-})
-```
-
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
-
-```js
-grunt.initConfig({
-  buddha: {
     options: {
-      separator: ': ',
-      punctuation: ' !!!',
+      who:'buddha',
+      commentsSymbol:'//'
     },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
+    dist:['example/*.js']
   },
 })
 ```
+buddha 配置项
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+2015-09-15 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.0.1&nbsp;&nbsp;&nbsp;&nbsp;MIT
 
 ## License
 Copyright (c) 2015 charlie. Licensed under the MIT license.
